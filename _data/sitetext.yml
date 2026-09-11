@@ -69,9 +69,9 @@ en: &DEFAULT_EN
     end: "Be Part <br> of Our <br> Story!"
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+     title: "About Us"
+    text: "AI-powered consulting for modern industry"
+    body: "MindScAile is a consulting firm focused on applying artificial intelligence to industrial environments. We help manufacturing companies optimize their processes, make data-driven decisions, reduce operational risks, and identify new opportunities for growth. Our approach combines scientific knowledge, technological innovation, and business strategy to deliver reliable solutions tailored to the needs of each organization."
     section: about
 
   clients:

@@ -6,11 +6,3 @@ black: "#000"
 #Image Customization
 header-image: "../img/header-bg.jpg"
 contact-image: "../img/map-image.png"
-#Custom CSS
-custom_css: |
-  h1, h2, h3, h4, h5, h6, p, span, div, li, a, nav a, .hero-title, .banner-title {
-      color: #D4AF37 !important;
-  }
-  .btn, .button, .cta-button {
-      border-color: #D4AF37 !important;
-  }

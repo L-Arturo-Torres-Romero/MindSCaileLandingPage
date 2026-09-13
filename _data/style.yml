@@ -3,6 +3,11 @@ highlight: "#D4AF37"
 white: "#D4AF37"
 black: "#000"
 
+header:
+  title: '<span style="color: #D4AF37 !important;">Welcome to MindScAile</span>'
+  text: '<span style="color: #D4AF37 !important;">De-risking AI where failure is not an option</span>'
+  button: '<span style="color: #D4AF37 !important;">Explore Innovation</span>'
+  buttonlink: "#services"
 #Image Customization
 header-image: "../img/header-bg.jpg"
 contact-image: "../img/map-image.png"

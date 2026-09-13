@@ -1,8 +1,6 @@
 #Color Customization
-highlight: "#54bfff"
-header-title-color: "#E5B53B"
-header-text-color: "#FFFFFF"
-White: "#FFEB00"
+highlight: "#E5B53B"
+white: "#E5B53B"
 black: "#000"
 
 #Image Customization

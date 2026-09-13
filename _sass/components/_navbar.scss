@@ -13,7 +13,8 @@
   }
   .navbar-brand {
     color: $primary;
-    @include script-font;
+    //@include script-font;
+    font-family: "Arial", sans-serif;
     &.active,
     &:active,
     &:focus,

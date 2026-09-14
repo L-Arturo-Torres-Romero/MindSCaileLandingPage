@@ -111,7 +111,7 @@ ul.social-buttons {
 // Mobile footer
 @media (max-width: 768px) {
   .footer {
-    text-align: center;
+    text-align: left;
 
     .footer-links {
       margin-bottom: 30px;
@@ -122,7 +122,7 @@ ul.social-buttons {
     }
 
     .quicklinks {
-      text-align: center;
+      text-align: left;
     }
   }
 }

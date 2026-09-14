@@ -1,35 +1,288 @@
 <!-- About -->
-{% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].about.section | default: "about" }}">
+{% assign about = site.data.sitetext[site.locale].about %}
+
+<style>
+  #{{ about.section }}.mindscaile-about {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  #{{ about.section }}.mindscaile-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22%;
+    height: 5px;
+    background: #b8860b;
+  }
+
+  #{{ about.section }}.mindscaile-about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22%;
+    right: 0;
+    height: 5px;
+    background: #176b87;
+  }
+
+  .mindscaile-about-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 60px;
+    align-items: center;
+  }
+
+  .mindscaile-about-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #176b87;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .mindscaile-about-label::before {
+    content: "";
+    width: 35px;
+    height: 3px;
+    background: #b8860b;
+  }
+
+  .mindscaile-about-title {
+    margin-bottom: 18px;
+    color: #17212a;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .mindscaile-about-subtitle {
+    margin-bottom: 25px;
+    color: #176b87;
+    font-family: "Droid Serif", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mindscaile-about-body {
+    color: #536471;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .mindscaile-about-body p {
+    margin-bottom: 18px;
+  }
+
+  .mindscaile-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+  }
+
+  .mindscaile-highlight {
+    padding-top: 18px;
+    border-top: 1px solid #dce5e9;
+  }
+
+  .mindscaile-highlight i {
+    margin-bottom: 12px;
+    color: #176b87;
+    font-size: 24px;
+  }
+
+  .mindscaile-highlight h4 {
+    margin-bottom: 8px;
+    color: #17212a;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .mindscaile-highlight p {
+    margin: 0;
+    color: #6c7c86;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .mindscaile-process {
+    min-height: 440px;
+    padding: 42px 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #17212a;
+    color: #ffffff;
+  }
+
+  .mindscaile-process::before {
+    content: "";
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: -90px;
+    right: -75px;
+    border: 35px solid rgba(23, 107, 135, 0.65);
+    border-radius: 50%;
+  }
+
+  .mindscaile-process::after {
+    content: "";
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    bottom: -90px;
+    left: -80px;
+    background: #b8860b;
+    transform: rotate(45deg);
+  }
+
+  .mindscaile-process-heading,
+  .mindscaile-process-list {
+    position: relative;
+    z-index: 1;
+  }
+
+  .mindscaile-process-heading i {
+    margin-bottom: 20px;
+    color: #d4a514;
+    font-size: 38px;
+  }
+
+  .mindscaile-process-heading h3 {
+    max-width: 300px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 1.35;
+  }
+
+  .mindscaile-process-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .mindscaile-process-step {
+    padding: 13px 15px;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 12px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .mindscaile-process-number {
+    color: #d4a514;
+    font-weight: 700;
+  }
+
+  .mindscaile-process-name {
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 991px) {
+    .mindscaile-about-grid {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+
+    .mindscaile-about-title {
+      font-size: 40px;
+    }
+
+    .mindscaile-process {
+      min-height: 380px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #{{ about.section }}.mindscaile-about {
+      padding: 70px 0;
+    }
+
+    .mindscaile-about-title {
+      font-size: 32px;
+    }
+
+    .mindscaile-highlights {
+      grid-template-columns: 1fr;
+    }
+
+    .mindscaile-process {
+      min-height: 350px;
+      padding: 35px 25px;
+    }
+  }
+</style>
+
+<section
+  class="page-section mindscaile-about"
+  id="{{ about.section | default: 'about' }}"
+>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].about.text | default: "" }}</h3>
+    <div class="mindscaile-about-grid">
+
+      <div class="mindscaile-about-content">
+        <div class="mindscaile-about-label">About MindScAile</div>
+
+        <h2 class="mindscaile-about-title">
+          {{ about.title }}
+        </h2>
+
+        <div class="mindscaile-about-subtitle">
+          {{ about.text }}
+        </div>
+
+        <div class="mindscaile-about-body">
+          {{ about.body | markdownify }}
+        </div>
+
+        <div class="mindscaile-highlights">
+          {% for highlight in about.highlights %}
+          <article class="mindscaile-highlight">
+            <i class="{{ highlight.icon }}" aria-hidden="true"></i>
+            <h4>{{ highlight.title }}</h4>
+            <p>{{ highlight.desc }}</p>
+          </article>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div>
-      </div>
+
+      <aside class="mindscaile-process">
+        <div class="mindscaile-process-heading">
+          <i class="fas fa-robot" aria-hidden="true"></i>
+          <h3>{{ about.process_title }}</h3>
+        </div>
+
+        <div class="mindscaile-process-list">
+          {% for step in about.process %}
+          <div class="mindscaile-process-step">
+            <span class="mindscaile-process-number">
+              {{ step.number }}
+            </span>
+            <span class="mindscaile-process-name">
+              {{ step.title }}
+            </span>
+          </div>
+          {% endfor %}
+        </div>
+      </aside>
+
     </div>
   </div>
 </section>
-{% else %}
-<section class="page-section" id="{{ site.data.sitetext.about.section | default: "about" }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext.about.text | default: "" }}</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
 <!-- End About -->

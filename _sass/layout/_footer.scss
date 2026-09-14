@@ -1,13 +1,15 @@
 // Styling for the footer
 .footer {
-  padding: 25px 0;
-  text-align: center;
+  padding: 60px 0 25px;
+  text-align: left;
+
   span.copyright {
     font-size: 90%;
     line-height: 40px;
     text-transform: none;
     @include heading-font;
   }
+
   ul.quicklinks {
     font-size: 90%;
     line-height: 40px;
@@ -15,37 +17,6 @@
     text-transform: none;
     @include heading-font;
   }
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-  li {
-    a {
-      font-size: 20px;
-      line-height: 50px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      color: white;
-      border-radius: 100%;
-      outline: none;
-      background-color: $gray-900;
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: $primary;
-      }
-    }
-  }
-}
-// Additional footer sections
-
-.footer {
-  padding: 60px 0 25px;
-  text-align: center;
 
   h4 {
     margin-bottom: 15px;
@@ -108,6 +79,35 @@ ul.social-buttons {
   }
 }
 
+// Social Media
+ul.social-buttons {
+  margin-bottom: 0;
+  text-align: center;
+
+  li {
+    a {
+      font-size: 20px;
+      line-height: 50px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      color: white;
+      border-radius: 100%;
+      outline: none;
+      background-color: $gray-900;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
 // Mobile footer
 @media (max-width: 768px) {
   .footer {
@@ -119,6 +119,7 @@ ul.social-buttons {
 
     .social-buttons {
       margin-top: 20px;
+      text-align: center;
     }
 
     .quicklinks {

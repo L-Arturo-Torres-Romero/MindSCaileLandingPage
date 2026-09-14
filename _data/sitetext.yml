@@ -68,10 +68,33 @@ en: &DEFAULT_EN
         align: right
     end: "Be Part <br> of Our <br> Story!"
 
-  about:
+ about:
     title: "About Us"
-    text: "AI-powered consulting for modern industry"
-    body: "MindScAile is a consulting firm focused on applying artificial intelligence to industrial environments. We help manufacturing companies optimize their processes, make data-driven decisions, reduce operational risks, and identify new opportunities for growth. Our approach combines scientific knowledge, technological innovation, and business strategy to deliver reliable solutions tailored to the needs of each organization."
+    text: "Turning engineering challenges into intelligent solutions"
+    body: |
+      MindScAile is a technology consulting initiative built on more than two decades of experience in software engineering, automotive development, factory automation, and systems architecture. We combine advanced engineering knowledge, artificial intelligence, and a practical understanding of industrial processes to help organizations develop safer, more efficient, and scalable solutions.
+
+      Our expertise covers the complete development lifecycle, from requirements analysis and project planning to software architecture, testing, validation, and implementation. We work with recognized methodologies and standards such as ASPICE, ISO 26262, ISTQB, PMP, and Scrum.
+
+      At MindScAile, we begin by understanding each organization's processes and challenges. We then identify opportunities for improvement and propose intelligent tools tailored to its operational and business objectives.
+    highlights:
+      - title: "Automotive Engineering"
+        desc: "Safety-focused software development, testing, validation, and systems architecture."
+        icon: "fas fa-car"
+      - title: "Factory Automation"
+        desc: "Integration of industrial software, PLCs, robots, instruments, and production equipment."
+        icon: "fas fa-industry"
+      - title: "AI-Driven Solutions"
+        desc: "Intelligent tools designed to optimize processes, support decisions, and reduce operational risks."
+        icon: "fas fa-brain"
+    process_title: "From analysis to implementation"
+    process:
+      - number: "01"
+        title: "Understand the challenge"
+      - number: "02"
+        title: "Design the right solution"
+      - number: "03"
+        title: "Transform the process"
     section: about
 
   clients:

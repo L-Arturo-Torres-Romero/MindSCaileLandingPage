@@ -65,31 +65,31 @@ en: &DEFAULT_EN
 
   about:
     title: "About Us"
-    text: "Turning engineering challenges into intelligent solutions"
+    text: "Connecting specialized knowledge and emerging technologies to create real value"
     body: |
-      MindScAile is a technology consulting initiative built on more than two decades of experience in software engineering, automotive development, factory automation, and systems architecture. We combine advanced engineering knowledge, artificial intelligence, and a practical understanding of industrial processes to help organizations develop safer, more efficient, and scalable solutions.
+      MindScAIle was created to bring together experience, specialized knowledge, and diverse professional perspectives to help organizations achieve their goals, improve efficiency, and generate greater value through technology.
 
-      Our expertise covers the complete development lifecycle, from requirements analysis and project planning to software architecture, testing, validation, and implementation. We work with recognized methodologies and standards such as ASPICE, ISO 26262, ISTQB, PMP, and Scrum.
+      Our multidisciplinary team combines expertise in engineering, software development, technology, business, research, and project management. This allows us to understand organizational challenges from different perspectives and develop comprehensive solutions that connect proven methods with emerging technologies such as artificial intelligence, simulation, and automation.
 
-      At MindScAile, we begin by understanding each organization's processes and challenges. We then identify opportunities for improvement and propose intelligent tools tailored to its operational and business objectives.
+      We believe technology should be applied with purpose. Rather than simply offering engineering hours or predetermined tools, we begin by understanding each client's objectives, identifying the real problem, and determining which knowledge and technology can deliver the greatest value. Our goal is to become a trusted technology partner that helps organizations reduce waste, rework, and quality issues while becoming more efficient, innovative, and competitive.
     highlights:
-      - title: "Automotive Engineering"
-        desc: "Safety-focused software development, testing, validation, and systems architecture."
-        icon: "fas fa-car"
-      - title: "Factory Automation"
-        desc: "Integration of industrial software, PLCs, robots, instruments, and production equipment."
-        icon: "fas fa-industry"
-      - title: "AI-Driven Solutions"
-        desc: "Intelligent tools designed to optimize processes, support decisions, and reduce operational risks."
-        icon: "fas fa-brain"
-    process_title: "From analysis to implementation"
+      - title: "Software & Critical Systems"
+        desc: "Software engineering, embedded systems, and reliable solutions for environments where failure has significant consequences."
+        icon: "fas fa-microchip"
+      - title: "Simulation & Intelligent Automation"
+        desc: "System modeling, simulation, control, artificial intelligence, and physical AI applied to real engineering challenges."
+        icon: "fas fa-cogs"
+      - title: "Process & Business Optimization"
+        desc: "Analysis of technical and business processes to reduce waste, rework, and quality issues while generating measurable value."
+        icon: "fas fa-chart-line"
+    process_title: "From challenges to real value"
     process:
       - number: "01"
-        title: "Understand the challenge"
+        title: "Understand the objectives"
       - number: "02"
-        title: "Design the right solution"
+        title: "Identify the real problem"
       - number: "03"
-        title: "Transform the process"
+        title: "Apply the right technology"
     section: about
 
   clients:

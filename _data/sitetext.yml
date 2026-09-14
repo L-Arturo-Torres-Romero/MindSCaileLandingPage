@@ -117,34 +117,34 @@ en: &DEFAULT_EN
     section: team
     people:
       - name: "MIguel Marina"
-        role: "Lead Designer"
+        role: "Expert Assessor"
         image: assets/img/team/1.jpg
         social:
           - url: https://twitter.com
             icon: fab fa-twitter
           - url: https://facebook.com
             icon: fab fa-facebook-f
-          - url: https://linkedin.com
+          - url: https://www.linkedin.com/in/progman32
             icon: fab fa-linkedin-in
       - name: "Luis Arturo Torres"
-        role: "Lead Marketer"
+        role: "Chief Scientist"
         image: assets/img/team/2.jpg
         social:
           - url: https://twitter.com
             icon: fab fa-twitter
           - url: https://facebook.com
             icon: fab fa-facebook-f
-          - url: https://linkedin.com
+          - url: https://www.linkedin.com/in/luisarturotorres
             icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
+      - name: "Aurora Fernández"
+        role: "Business Analyst"
         image: assets/img/team/3.jpg
         social:
           - url: https://twitter.com
             icon: fab fa-twitter
           - url: https://facebook.com
             icon: fab fa-facebook-f
-          - url: https://linkedin.com
+          - url: https://www.linkedin.com/in/aurora-fernandez-b17b2029
             icon: fab fa-linkedin-in
 
   contact:
@@ -308,7 +308,7 @@ es: &DEFAULT_ES
 
   contact:
     title: "Contáctenos"
-    text: "Lorem ipsum or call 123456789"
+    text: "Message or call +52 3313652930"
     section: contacto
     name: "Nombre*"
     name-validation: "Por favor ingrese su nombre."

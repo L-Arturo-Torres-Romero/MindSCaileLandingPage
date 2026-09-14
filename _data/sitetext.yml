@@ -32,14 +32,14 @@ en: &DEFAULT_EN
         icon: fab fa-markdown
 
   portfolio:
-    title: "Casos de Uso"
+    title: "Use cases"
     text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
     closebutton: "Close Project"
 
   timeline:
     title: "Timeline"
-    text: "Conoce nuestra historia"
+    text: "Discover our story"
     section: timeline
     # left is the default
     #start_align: "left"

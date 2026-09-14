@@ -68,7 +68,7 @@ en: &DEFAULT_EN
         align: right
     end: "Be Part <br> of Our <br> Story!"
 
- about:
+  about:
     title: "About Us"
     text: "Turning engineering challenges into intelligent solutions"
     body: |

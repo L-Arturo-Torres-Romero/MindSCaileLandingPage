@@ -255,5 +255,30 @@
       border-left-color: #17364F !important;
       border-right-color: #00D0D7 !important;
     }
+        /* Bicolor borders for team photos */
+    #team .team-member img {
+      padding: 7px;
+      border: 0 !important;
+      border-radius: 50%;
+      background: conic-gradient(
+        from -35deg,
+        #00D0D7 0deg,
+        #00D0D7 70deg,
+        #17364F 70deg,
+        #17364F 360deg
+      );
+      object-fit: cover;
+    }
+
+    /* Alternate the aquamarine segment */
+    #team .row > [class*="col-"]:nth-child(even) .team-member img {
+      background: conic-gradient(
+        from 145deg,
+        #00D0D7 0deg,
+        #00D0D7 70deg,
+        #17364F 70deg,
+        #17364F 360deg
+      );
+    }
     </style>
 </head>

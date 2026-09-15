@@ -172,5 +172,46 @@
     #contact {
       background-color: #FFFFFF !important;
     }
+        /* Alternating two-color section dividers */
+    #services,
+    #team,
+    #contact {
+      background-image: linear-gradient(
+        to right,
+        #00D0D7 0%,
+        #00D0D7 22%,
+        #17364F 22%,
+        #17364F 100%
+      ) !important;
+      background-size: 100% 5px !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #portfolio,
+    #timeline,
+    #clients {
+      background-image: linear-gradient(
+        to right,
+        #17364F 0%,
+        #17364F 78%,
+        #00D0D7 78%,
+        #00D0D7 100%
+      ) !important;
+      background-size: 100% 5px !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+    }
+
+    /* About already uses decorative pseudo-elements */
+    #about.mindscaile-about::before {
+      width: 22%;
+      background: #00D0D7 !important;
+    }
+
+    #about.mindscaile-about::after {
+      left: 22%;
+      background: #17364F !important;
+    }
     </style>
 </head>

@@ -213,5 +213,47 @@
       left: 22%;
       background: #17364F !important;
     }
+        /* Contact form fields */
+    #contact .form-control {
+      color: #0D1A2F !important;
+      background-color: #F3FCFC !important;
+      border: 1px solid #17364F !important;
+      border-left: 7px solid #00D0D7 !important;
+      box-shadow: none;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    /* Aquamarine detail on the opposite side of Message */
+    #contact textarea.form-control {
+      border-left: 1px solid #17364F !important;
+      border-right: 7px solid #00D0D7 !important;
+    }
+
+    /* Placeholder text */
+    #contact .form-control::placeholder {
+      color: #17364F !important;
+      opacity: 0.65;
+      font-weight: 600;
+    }
+
+    /* Selected field */
+    #contact .form-control:focus {
+      color: #0D1A2F !important;
+      background-color: #FFFFFF !important;
+      border-color: #17364F !important;
+      box-shadow: 0 0 0 0.2rem rgba(0, 208, 215, 0.30) !important;
+    }
+
+    #contact .form-control:focus {
+      border-left-color: #00D0D7 !important;
+    }
+
+    #contact textarea.form-control:focus {
+      border-left-color: #17364F !important;
+      border-right-color: #00D0D7 !important;
+    }
     </style>
 </head>

@@ -23,13 +23,13 @@ en: &DEFAULT_EN
     list:
       - title: "Critical Systems & Software"
         desc: "Systems and software where failures can have serious consequences. We help design, develop, and validate reliable solutions for applications where safety, reliability, and quality are essential. Our approach draws on practices and techniques from standards and frameworks such as ISO 26262, SOTIF, Automotive SPICE, CMMI, and MOPROSOFT, adapted to the needs of each project."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+        icon: fas fa-network-wired #find more at https://fontawesome.com/icons
       - title: "Non-Critical Systems & Software"
         desc: "Systems and software where failures do not pose significant risks, but can still impact productivity, quality, costs, or business operations. We help design, develop, and improve practical and reliable solutions using modern software engineering, automation, AI, and digital technologies."
         icon: fas fa-laptop
       - title: "Business & Project Management"
         desc: "We help organizations analyze, plan, and manage projects and business initiatives, with a focus on efficiency, quality, risk, and measurable results. We combine engineering expertise, data-driven analysis, and proven management practices to identify opportunities, solve problems, and improve business performance."
-        icon: fab fa-markdown
+        icon: fas fa-project-diagram
 
   portfolio:
     title: "Use cases"

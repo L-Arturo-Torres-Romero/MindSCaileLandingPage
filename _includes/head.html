@@ -55,4 +55,109 @@
     }
   </style>
   {% endif %}
+  <!-- MindScAIle global color palette -->
+  <style id="mindscaile-global-palette">
+    :root {
+      --mindscaile-header: #17364F;
+      --mindscaile-background: #FFFFFF;
+      --mindscaile-text: #0D1A2F;
+      --mindscaile-cta: #00D0D7;
+      --mindscaile-cta-hover: #00A9AF;
+    }
+
+    /* Global background */
+    body,
+    main,
+    .page-section,
+    .bg-light,
+    #services,
+    #portfolio,
+    #about,
+    #timeline,
+    #team,
+    #clients,
+    #contact,
+    #footer {
+      background-color: var(--mindscaile-background) !important;
+    }
+
+    /* Remove the dark background image from Contact */
+    #contact {
+      background-image: none !important;
+    }
+
+    /* General text */
+    body,
+    p,
+    .page-section,
+    .page-section h1,
+    .page-section h2,
+    .page-section h3,
+    .page-section h4,
+    .page-section h5,
+    .page-section h6,
+    .section-heading,
+    .section-subheading,
+    .text-muted,
+    #contact label,
+    #footer {
+      color: var(--mindscaile-text);
+    }
+
+    /* Navigation header */
+    #mainNav,
+    #mainNav.navbar-shrink {
+      background-color: var(--mindscaile-header) !important;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+      color: #FFFFFF;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link:hover,
+    #mainNav .navbar-nav .nav-item .nav-link.active {
+      color: var(--mindscaile-cta);
+    }
+
+    #mainNav .navbar-brand {
+      color: var(--mindscaile-cta);
+    }
+
+    /* Call-to-action buttons */
+    .btn-primary {
+      color: var(--mindscaile-text) !important;
+      background-color: var(--mindscaile-cta) !important;
+      border-color: var(--mindscaile-cta) !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+      color: var(--mindscaile-text) !important;
+      background-color: var(--mindscaile-cta-hover) !important;
+      border-color: var(--mindscaile-cta-hover) !important;
+    }
+
+    .btn-primary:focus,
+    .btn-primary:active {
+      box-shadow: 0 0 0 0.2rem rgba(0, 208, 215, 0.35) !important;
+    }
+
+    /* Mobile menu button */
+    #mainNav .navbar-toggler {
+      color: var(--mindscaile-text);
+      background-color: var(--mindscaile-cta);
+    }
+
+    /* Keep text readable over dark or photographic areas */
+    .masthead,
+    .masthead p,
+    .masthead .intro-lead-in,
+    .masthead .intro-heading,
+    .mindscaile-process,
+    .mindscaile-process h3,
+    .mindscaile-process span {
+      color: #FFFFFF;
+    }
+  </style>
 </head>

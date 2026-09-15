@@ -21,9 +21,9 @@ title      : MindScAile
 email      : luisarturo.torres7.tech@gmail.com #this is also the email contact forms will go to
 description: "Bridging the gap between advanced computational science and factory-floor profitability. We combine scientist-level rigor with sharp business acumen to deliver safe, predictable, and standard-compliant AI systems for high-consequence industries."
 author     : Luis Arturo Torres Romero
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+logo:     #optional, defaults to site title
+   path: assets\img\logo\mindscaile-logo.png
+   height: 60 #height in px, defaults to 52px
 
 locale: "en-US" # See available languages in _data/sitetext.yml
 

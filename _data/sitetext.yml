@@ -130,10 +130,10 @@ en: &DEFAULT_EN
         role: "Chief Scientist"
         image: assets/img/team/2.jpg
         social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
+          - url: https://l-arturo-torres-romero.github.io/
+            icon: fas fa-id-card
+          - url: https://github.com/L-Arturo-Torres-Romero
+            icon: fab fa-github
           - url: https://www.linkedin.com/in/luisarturotorres
             icon: fab fa-linkedin-in
       - name: "Aurora Fernández"

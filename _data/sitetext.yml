@@ -112,11 +112,11 @@ en: &DEFAULT_EN
 
   team:
     title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    text: "The people who turn complex AI challenges into safe, resilient, and high-performing solutions."
+    subtext: "We combine deep technical rigor with proactive risk management, ensuring your artificial intelligence initiatives scale safely and perform reliably in production."
     section: team
     people:
-      - name: "MIguel Marina"
+      - name: "Miguel Marina"
         role: "Expert Assessor"
         image: assets/img/team/1.jpg
         social:

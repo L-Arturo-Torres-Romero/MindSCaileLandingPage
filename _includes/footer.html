@@ -60,16 +60,15 @@
       <!-- Social Media -->
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
+          {% for link in site.data.sitetext.footer.social %}
           <li class="list-inline-item">
-            <a href="https://github.com/L-Arturo-Torres-Romero" target="_blank">
-              <i class="fab fa-github"></i>
+            {% if link.url %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
             </a>
+            {% endif %}
           </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/luisarturotorres" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
       <!-- Legal -->

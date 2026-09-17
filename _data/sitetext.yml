@@ -324,13 +324,19 @@ es: &DEFAULT_ES
   footer:
     legal: "Política de Privacidad"
     social:
- - url: https://l-arturo-torres-romero.github.io/
-     - url: https://l-arturo-torres-romero.github.io/
-            icon: fas fa-id-card
-      - url: https://github.com/L-Arturo-Torres-Romero
-            icon: fab fa-github
-      - url: https://www.linkedin.com/in/luisarturotorres
-            icon: fab fa-linkedin-in
+    - url: https://l-arturo-torres-romero.github.io/
+      icon: fas fa-id-card
+    - url: https://github.com/L-Arturo-Torres-Romero
+      icon: fab fa-github
+    - url: https://www.linkedin.com/in/luisarturotorres
+      icon: fab fa-linkedin-in
+    - url: https://www.linkedin.com/in/luisarturotorres
+      icon: fab fa-linkedin-in
+    - url: "- url: "mailto:tu-correo@empresa.com"
+      icon: "fas fa-envelope""
+    - url: "https://wa.me/52133XXXXXXXX"
+      icon: "fab fa-whatsapp"
+
 es-ES:
   <<: *DEFAULT_ES
 es-CO:

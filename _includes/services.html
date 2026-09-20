@@ -1,59 +1,392 @@
-<!-- Services -->
-{% if site.locale and site.locale != "" and site.locale != nil %}
-  <section class="page-section" id="{{ site.data.sitetext[site.locale].services.section | default: "services" }}">
-    <div class="container">
-	
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].services.title | default: "Services" }}</h2>
-          {% if site.data.sitetext[site.locale].services.text %}
-		  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].services.text }}</h3>
-		  {% endif %}
-        </div>
-      </div>
-	  
-      <div class="row text-center">
-	  {% for service in site.data.sitetext[site.locale].services.list %}
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="{{ service.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">{{ service.title | markdownify }}</h4>
-          {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
-        </div>
-	  {% endfor %}
-      </div>
-	  
-    </div>
-  </section>
-{% else %}
-<section class="page-section" id="{{ site.data.sitetext.services.section | default: "services" }}">
-  <div class="container">
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
 
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.services.title | default: "Services" }}</h2>
-        {% if site.data.sitetext.services.text %}
-    <h3 class="section-subheading text-muted">{{ site.data.sitetext.services.text }}</h3>
-    {% endif %}
-      </div>
-    </div>
-  
-    <div class="row text-center">
-  {% for service in site.data.sitetext.services.list %}
-      <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fas fa-circle fa-stack-2x text-primary"></i>
-          <i class="{{ service.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4 class="service-heading">{{ service.title | markdownify }}</h4>
-        {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
-      </div>
-  {% endfor %}
-    </div>
-  
-  </div>
-</section>
-{% endif %}
-<!-- End Services -->
+# --- SECCIÓN RAIZ (Para que el bloque {% else %} del HTML los encuentre directamente) ---
+services:
+  title: "How We Help You"
+  text: "Turn an idea into a viable solution."
+  section: services
+  list:
+    - title: "Technology Assessment"
+      desc: "We analyze your current situation, needs, processes, and tools to identify opportunities for improvement."
+      icon: "fas fa-search"
+    - title: "Strategy & Roadmap"
+      desc: "We define what to do, in what order, and with what technology, establishing a practical path to reach the result."
+      icon: "fas fa-map"
+    - title: "Solutions Architecture"
+      desc: "We design the technological solution considering integration, security, scalability, costs, and operation."
+      icon: "fas fa-network-wired"
+    - title: "Artificial Intelligence Strategy"
+      desc: "We identify where AI can truly add value and how to incorporate it responsibly and profitably."
+      icon: "fas fa-brain"
+    - title: "Process Automation"
+      desc: "We detect repetitive tasks and design alternatives to reduce manual work, errors, and operating times."
+      icon: "fas fa-cogs"
+    - title: "Strategic Guidance"
+      desc: "We accompany you through decision-making, vendor selection, implementation, and the evolution of the solution."
+      icon: "fas fa-comments"
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Welcome to MindScAile
+    text: De-risking AI where failure is not an option
+    button: Explore Innovation
+    buttonlink: "#portfolio"
+
+  services:
+    title: "How We Help You"
+    text: "Turn an idea into a viable solution."
+    section: services
+    list:
+      - title: "Technology Assessment"
+        desc: "We analyze your current situation, needs, processes, and tools to identify opportunities for improvement."
+        icon: "fas fa-search"
+      - title: "Strategy & Roadmap"
+        desc: "We define what to do, in what order, and with what technology, establishing a practical path to reach the result."
+        icon: "fas fa-map"
+      - title: "Solutions Architecture"
+        desc: "We design the technological solution considering integration, security, scalability, costs, and operation."
+        icon: "fas fa-network-wired"
+      - title: "Artificial Intelligence Strategy"
+        desc: "We identify where AI can truly add value and how to incorporate it responsibly and profitably."
+        icon: "fas fa-brain"
+      - title: "Process Automation"
+        desc: "We detect repetitive tasks and design alternatives to reduce manual work, errors, and operating times."
+        icon: "fas fa-cogs"
+      - title: "Strategic Guidance"
+        desc: "We accompany you through decision-making, vendor selection, implementation, and the evolution of the solution."
+        icon: "fas fa-comments"
+
+  portfolio:
+    title: "Use cases"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
+
+  timeline:
+    title: "Timeline"
+    text: "Discover our story"
+    section: timeline
+    events:
+      - title: "Building Experience"
+        year: "2007-2023"
+        desc: "Over the years, we gain experience across different industries, developing technical expertise and learning from real-world challenges, projects, and technologies."
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "An Agency is Born"
+        year: "March 2025"
+        desc: "Our conversations turn into an idea: bringing together our experience and knowledge to explore how emerging technologies can create new opportunities for organizations."
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Looking for Challenges"
+        year: "2025 - Present"
+        desc: "With MindScAIle taking shape, we begin looking for opportunities where our experience and emerging technologies can make a real difference."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+        align: right
+    end: '<a href="#contact" class="js-scroll-trigger" style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">Be Part <br> of Our <br> Story!</a>'
+
+  about:
+    title: "About Us"
+    text: "Connecting specialized knowledge and emerging technologies to create real value"
+    body: |
+      MindScAIle was created to bring together experience, specialized knowledge, and diverse professional perspectives to help organizations achieve their goals, improve efficiency, and generate greater value through technology.
+
+      Our multidisciplinary team combines expertise in engineering, software development, technology, business, research, and project management. This allows us to understand organizational challenges from different perspectives and develop comprehensive solutions that connect proven methods with emerging technologies such as artificial intelligence, simulation, and automation.
+
+      We believe technology should be applied with purpose. Rather than simply offering engineering hours or predetermined tools, we begin by understanding each client's objectives, identifying the real problem, and determining which knowledge and technology can deliver the greatest value. Our goal is to become a trusted technology partner that helps organizations reduce waste, rework, and quality issues while becoming more efficient, innovative, and competitive.
+    highlights:
+      - title: "Software & Critical Systems"
+        desc: "Software engineering, embedded systems, and reliable solutions for environments where failure has significant consequences."
+        icon: "fas fa-microchip"
+      - title: "Simulation & Intelligent Automation"
+        desc: "System modeling, simulation, control, artificial intelligence, and physical AI applied to real engineering challenges."
+        icon: "fas fa-cogs"
+      - title: "Process & Business Optimization"
+        desc: "Analysis of technical and business processes to reduce waste, rework, and quality issues while generating measurable value."
+        icon: "fas fa-chart-line"
+    process_title: "From challenges to real value"
+    process:
+      - number: "01"
+        title: "Understand the objectives"
+      - number: "02"
+        title: "Identify the real problem"
+      - number: "03"
+        title: "Apply the right technology"
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: ""
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "The people who turn complex AI challenges into safe, resilient, and high-performing solutions."
+    subtext: "We combine deep technical rigor with proactive risk management, ensuring your artificial intelligence initiatives scale safely and perform reliably in production."
+    section: team
+    people:
+      - name: "Miguel Marina"
+        role: "Expert Assessor"
+        image: assets/img/team/1.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://www.linkedin.com/in/progman32
+            icon: fab fa-linkedin-in
+      - name: "Luis Arturo Torres"
+        role: "Chief Scientist"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://l-arturo-torres-romero.github.io/
+            icon: fas fa-id-card
+          - url: https://github.com/L-Arturo-Torres-Romero
+            icon: fab fa-github
+          - url: https://www.linkedin.com/in/luisarturotorres
+            icon: fab fa-linkedin-in
+      - name: "Aurora Fernández"
+        role: "Business Analyst"
+        image: assets/img/team/3.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://www.linkedin.com/in/aurora-fernandez-b17b2029
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "Email mindscaile@outlook.com"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Spanish
+# -------
+es: &DEFAULT_ES
+  header:
+    title: Welcome to MindScAile
+    text: De-risking AI where failure is not an option
+    button: Explore Innovation
+    buttonlink: "#portfolio"
+
+  services:
+    title: "How We Help You"
+    text: "Turn an idea into a viable solution."
+    section: services
+    list:
+      - title: "Technology Assessment"
+        desc: "We analyze your current situation, needs, processes, and tools to identify opportunities for improvement."
+        icon: "fas fa-search"
+      - title: "Strategy & Roadmap"
+        desc: "We define what to do, in what order, and with what technology, establishing a practical path to reach the result."
+        icon: "fas fa-map"
+      - title: "Solutions Architecture"
+        desc: "We design the technological solution considering integration, security, scalability, costs, and operation."
+        icon: "fas fa-network-wired"
+      - title: "Artificial Intelligence Strategy"
+        desc: "We identify where AI can truly add value and how to incorporate it responsibly and profitably."
+        icon: "fas fa-brain"
+      - title: "Process Automation"
+        desc: "We detect repetitive tasks and design alternatives to reduce manual work, errors, and operating times."
+        icon: "fas fa-cogs"
+      - title: "Strategic Guidance"
+        desc: "We accompany you through decision-making, vendor selection, implementation, and the evolution of the solution."
+        icon: "fas fa-comments"
+
+  portfolio:
+    title: "Use cases"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
+
+  timeline:
+    title: "Timeline"
+    text: "Discover our story"
+    section: timeline
+    events:
+      - title: "Building Experience"
+        year: "2007-2023"
+        desc: "Over the years, we gain experience across different industries, developing technical expertise and learning from real-world challenges, projects, and technologies."
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "An Agency is Born"
+        year: "March 2025"
+        desc: "Our conversations turn into an idea: bringing together our experience and knowledge to explore how emerging technologies can create new opportunities for organizations."
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Looking for Challenges"
+        year: "2025 - Present"
+        desc: "With MindScAIle taking shape, we begin looking for opportunities where our experience and emerging technologies can make a real difference."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+        align: right
+    end: '<a href="#contact" class="js-scroll-trigger" style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">Be Part <br> of Our <br> Story!</a>'
+
+  about:
+    title: "About Us"
+    text: "Connecting specialized knowledge and emerging technologies to create real value"
+    body: |
+      MindScAIle was created to bring together experience, specialized knowledge, and diverse professional perspectives to help organizations achieve their goals, improve efficiency, and generate greater value through technology.
+
+      Our multidisciplinary team combines expertise in engineering, software development, technology, business, research, and project management. This allows us to understand organizational challenges from different perspectives and develop comprehensive solutions that connect proven methods with emerging technologies such as artificial intelligence, simulation, and automation.
+
+      We believe technology should be applied with purpose. Rather than simply offering engineering hours or predetermined tools, we begin by understanding each client's objectives, identifying the real problem, and determining which knowledge and technology can deliver the greatest value. Our goal is to become a trusted technology partner that helps organizations reduce waste, rework, and quality issues while becoming more efficient, innovative, and competitive.
+    highlights:
+      - title: "Software & Critical Systems"
+        desc: "Software engineering, embedded systems, and reliable solutions for environments where failure has significant consequences."
+        icon: "fas fa-microchip"
+      - title: "Simulation & Intelligent Automation"
+        desc: "System modeling, simulation, control, artificial intelligence, and physical AI applied to real engineering challenges."
+        icon: "fas fa-cogs"
+      - title: "Process & Business Optimization"
+        desc: "Analysis of technical and business processes to reduce waste, rework, and quality issues while generating measurable value."
+        icon: "fas fa-chart-line"
+    process_title: "From challenges to real value"
+    process:
+      - number: "01"
+        title: "Understand the objectives"
+      - number: "02"
+        title: "Identify the real problem"
+      - number: "03"
+        title: "Apply the right technology"
+    section: about
+
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: ""
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "The people who turn complex AI challenges into safe, resilient, and high-performing solutions."
+    subtext: "We combine deep technical rigor with proactive risk management, ensuring your artificial intelligence initiatives scale safely and perform reliably in production."
+    section: team
+    people:
+      - name: "Miguel Marina"
+        role: "Expert Assessor"
+        image: assets/img/team/1.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://www.linkedin.com/in/progman32
+            icon: fab fa-linkedin-in
+      - name: "Luis Arturo Torres"
+        role: "Chief Scientist"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://l-arturo-torres-romero.github.io/
+            icon: fas fa-id-card
+          - url: https://github.com/L-Arturo-Torres-Romero
+            icon: fab fa-github
+          - url: https://www.linkedin.com/in/luisarturotorres
+            icon: fab fa-linkedin-in
+      - name: "Aurora Fernández"
+        role: "Business Analyst"
+        image: assets/img/team/3.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://www.linkedin.com/in/aurora-fernandez-b17b2029
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "Email mindscaile@outlook.com"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    legal: "Privacy Policy"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES

@@ -61,7 +61,7 @@ en: &DEFAULT_EN
         alt: image alt text
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+    end: '<a href="#contact" class="js-scroll-trigger" style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">Be Part <br> of Our <br> Story!</a>'
 
   about:
     title: "About Us"

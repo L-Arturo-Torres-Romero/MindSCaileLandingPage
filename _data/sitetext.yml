@@ -15,8 +15,8 @@ en: &DEFAULT_EN
     text: De-risking AI where failure is not an option
     button: Explore Innovation
     buttonlink: "#portfolio"
-
-services:
+    
+  services:
     title: "Services"
     text: "Turn an idea into a viable solution."
     section: services
@@ -39,13 +39,13 @@ services:
       - title: "Strategic Guidance"
         desc: "We accompany you through decision-making, vendor selection, implementation, and the evolution of the solution."
         icon: "fas fa-comments"
-
+        
   portfolio:
     title: "Use cases"
     text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
-    closebutton: "Close Project"
-
+    closebutton: "Close Project
+        
   timeline:
     title: "Timeline"
     text: "Discover our story"

@@ -16,20 +16,29 @@ en: &DEFAULT_EN
     button: Explore Innovation
     buttonlink: "#portfolio"
 
-  services:
-    title: "Services"
-    text: "AI, automation, and digital solutions designed to reduce risk and create measurable value."
-    section: services
-    list:
-      - title: "Critical Systems & Software"
-        desc: "Systems and software where failures can have serious consequences. We help design, develop, and validate reliable solutions for applications where safety, reliability, and quality are essential. Our approach draws on practices and techniques from standards and frameworks such as ISO 26262, SOTIF, Automotive SPICE, CMMI, and MOPROSOFT, adapted to the needs of each project."
-        icon: fas fa-microchip #find more at https://fontawesome.com/icons
-      - title: "Non-Critical Systems & Software"
-        desc: "Systems and software where failures do not pose significant risks, but can still impact productivity, quality, costs, or business operations. We help design, develop, and improve practical and reliable solutions using modern software engineering, automation, AI, and digital technologies."
-        icon: fas fa-laptop
-      - title: "Business & Project Management"
-        desc: "We help organizations analyze, plan, and manage projects and business initiatives, with a focus on efficiency, quality, risk, and measurable results. We combine engineering expertise, data-driven analysis, and proven management practices to identify opportunities, solve problems, and improve business performance."
-        icon: fas fa-project-diagram
+services:
+  title: "¿Cómo te ayudamos?"
+  text: "Convierta una idea en una solución viable."
+  section: services
+  list:
+    - title: "Evaluación tecnológica"
+      desc: "Analizamos tu situación actual, necesidades, procesos y herramientas para identificar oportunidades de mejora."
+      icon: "fas fa-search"
+    - title: "Estrategia y roadmap"
+      desc: "Definimos qué hacer, en qué orden y con qué tecnología, estableciendo una ruta práctica para llegar al resultado."
+      icon: "fas fa-map"
+    - title: "Arquitectura de soluciones"
+      desc: "Diseñamos la solución tecnológica considerando integración, seguridad, escalabilidad, costos y operación."
+      icon: "fas fa-network-wired"
+    - title: "Estrategia de Inteligencia Artificial"
+      desc: "Identificamos dónde la IA realmente puede aportar valor y cómo incorporarla de forma responsable y rentable."
+      icon: "fas fa-brain"
+    - title: "Automatización de procesos"
+      desc: "Detectamos tareas repetitivas y diseñamos alternativas para reducir trabajo manual, errores y tiempos de operación."
+      icon: "fas fa-cogs"
+    - title: "Acompañamiento estratégico"
+      desc: "Te acompañamos durante la toma de decisiones, selección de proveedores, implementación y evolución de la solución."
+      icon: "fas fa-comments"
 
   portfolio:
     title: "Use cases"

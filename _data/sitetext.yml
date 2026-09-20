@@ -1,3 +1,4 @@
+```yaml
 #
 # Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
 #
@@ -15,7 +16,7 @@ en: &DEFAULT_EN
     text: De-risking AI where failure is not an option
     button: Explore Innovation
     buttonlink: "#portfolio"
-    
+
   services:
     title: "Services"
     text: "Turn an idea into a viable solution."
@@ -39,13 +40,13 @@ en: &DEFAULT_EN
       - title: "Strategic Guidance"
         desc: "We accompany you through decision-making, vendor selection, implementation, and the evolution of the solution."
         icon: "fas fa-comments"
-        
+
   portfolio:
     title: "Use cases"
     text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
-    closebutton: "Close Project
-        
+    closebutton: "Close Project"
+
   timeline:
     title: "Timeline"
     text: "Discover our story"
@@ -184,14 +185,19 @@ en: &DEFAULT_EN
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
+
 en-US:
   <<: *DEFAULT_EN
+
 en-CA:
   <<: *DEFAULT_EN
+
 en-GB:
   <<: *DEFAULT_EN
+
 en-AU:
   <<: *DEFAULT_EN
+
 
 # Spanish
 # -------
@@ -331,20 +337,23 @@ es: &DEFAULT_ES
     submit: "Enviar Mensaje"
 
   footer:
-  legal: "Política de Privacidad"
-  social:
-    - url: "https://l-arturo-torres-romero.github.io/"
-      icon: "fas fa-id-card"
-    - url: "https://github.com/L-Arturo-Torres-Romero"
-      icon: "fab fa-github"
-    - url: "https://www.linkedin.com/in/luisarturotorres"
-      icon: "fab fa-linkedin-in"
-    - url: "mailto:tu-correo@empresa.com"
-      icon: "fas fa-envelope"
-    - url: "https://wa.me/52133XXXXXXXX"
-      icon: "fab fa-whatsapp"
+    legal: "Política de Privacidad"
+    social:
+      - url: "https://l-arturo-torres-romero.github.io/"
+        icon: "fas fa-id-card"
+      - url: "https://github.com/L-Arturo-Torres-Romero"
+        icon: "fab fa-github"
+      - url: "https://www.linkedin.com/in/luisarturotorres"
+        icon: "fab fa-linkedin-in"
+      - url: "mailto:tu-correo@empresa.com"
+        icon: "fas fa-envelope"
+      - url: "https://wa.me/52133XXXXXXXX"
+        icon: "fab fa-whatsapp"
 
 es-ES:
   <<: *DEFAULT_ES
+
 es-CO:
   <<: *DEFAULT_ES
+```
+

@@ -1,11 +1,11 @@
 ---
-title: Making complex processes simpler, faster, and more efficient.
+title: Making complex processes simpler, faster, and more efficient
 subtitle: Automation & Optimization
 image: assets/img/portfolio/05-full.jpg
 alt: 
 
 caption:
-  title: Making complex processes simpler, faster, and more efficient.
+  title: Making complex processes simpler, faster, and more efficient
   subtitle: Automation & Optimization
   thumbnail: assets/img/portfolio/05-thumbnail.jpg
 ---

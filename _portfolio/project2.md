@@ -13,6 +13,7 @@ We help organizations understand where technology can make the greatest impact, 
 From assessing your current technology maturity to identifying opportunities for improvement, we connect business objectives with the right technology, priorities, and investment.
 
 Services include:
+
 •	Technology Strategy
 •	Digital Transformation
 •	Digital Maturity Assessment

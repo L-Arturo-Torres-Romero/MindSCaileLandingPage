@@ -169,4 +169,12 @@
       }
     }
   }
+  .portfolio-image {
+  width: 100% !important;
+  aspect-ratio: 16 / 9;
+  height: auto !important;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 }

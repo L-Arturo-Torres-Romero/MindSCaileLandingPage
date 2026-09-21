@@ -4,5 +4,5 @@ white: "#FFFFFF"
 black: "#0D1A2F"
 
 #Image Customization
-header-image: "../imagen-vendedora.jpeg"
+header-image: "../header-bg.jpg"
 contact-image: "../img/map-image.png"

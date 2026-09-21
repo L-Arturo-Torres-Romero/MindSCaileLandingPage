@@ -5,14 +5,21 @@ image: assets/img/portfolio/02-full.jpg
 alt: Keep Exploring
 
 caption:
-  title: Explore
-  subtitle: Graphic Design
+  title: Turning Challenges into Technology Strategies
+  subtitle: Driving measurable business value.
   thumbnail: assets/img/portfolio/02-thumbnail.jpg
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+We help organizations understand where technology can make the greatest impact, define a clear digital transformation strategy, and build a practical roadmap to get there.
+From assessing your current technology maturity to identifying opportunities for improvement, we connect business objectives with the right technology, priorities, and investment.
+
+Services include:
+•	Technology Strategy
+•	Digital Transformation
+•	Digital Maturity Assessment
+•	Technology Roadmaps
 
 {:.list-inline}
-- Date: January 2017
-- Client: Explore
-- Category: Graphic Design
+- Date: September 2026
+- Project: Smart Mobility Transformation
+- Category: Automotive & AI
 

@@ -9,6 +9,7 @@
   <meta name="description" content="Bridging the gap between advanced computational science and factory-floor profitability. We combine scientist-level rigor with sharp business acumen to deliver safe, predictable, and standard-compliant AI systems for high-consequence industries.">
   <meta name="author" content="Luis Arturo Torres Romero">
   <link rel="canonical" href="/legal.html">
+  <link rel="icon" href="/assets/img/logo/favicon_32X32.ico">
 
   <title>Privacy Policy | MindScAile</title>
 
@@ -41,6 +42,232 @@
     }
   </style>
   
+  <!-- MindScAIle global color palette -->
+    }<style id="mindscaile-global-palette">
+    :root {
+      --mindscaile-header: #17364F;
+      --mindscaile-background: #FFFFFF;
+      --mindscaile-text: #0D1A2F;
+      --mindscaile-cta: #00D0D7;
+      --mindscaile-cta-hover: #00A9AF;
+    }
+
+    /* Global background */
+    body,
+    main,
+    .page-section,
+    .bg-light,
+    #services,
+    #portfolio,
+    #about,
+    #timeline,
+    #team,
+    #clients,
+    #contact,
+    #footer {
+      background-color: var(--mindscaile-background) !important;
+    }
+
+    /* Remove the dark background image from Contact */
+    #contact {
+      background-image: none !important;
+    }
+
+    /* General text */
+    body,
+    p,
+    .page-section,
+    .page-section h1,
+    .page-section h2,
+    .page-section h3,
+    .page-section h4,
+    .page-section h5,
+    .page-section h6,
+    .section-heading,
+    .section-subheading,
+    .text-muted,
+    #contact label,
+    #footer {
+      color: var(--mindscaile-text);
+    }
+
+    /* Navigation header */
+    #mainNav,
+    #mainNav.navbar-shrink {
+      background-color: var(--mindscaile-header) !important;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+      color: #FFFFFF;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link:hover,
+    #mainNav .navbar-nav .nav-item .nav-link.active {
+      color: var(--mindscaile-cta);
+    }
+
+    #mainNav .navbar-brand {
+      color: var(--mindscaile-cta);
+    }
+
+    /* Call-to-action buttons */
+    .btn-primary {
+      color: var(--mindscaile-text) !important;
+      background-color: var(--mindscaile-cta) !important;
+      border-color: var(--mindscaile-cta) !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+      color: var(--mindscaile-text) !important;
+      background-color: var(--mindscaile-cta-hover) !important;
+      border-color: var(--mindscaile-cta-hover) !important;
+    }
+
+    .btn-primary:focus,
+    .btn-primary:active {
+      box-shadow: 0 0 0 0.2rem rgba(0, 208, 215, 0.35) !important;
+    }
+
+    /* Mobile menu button */
+    #mainNav .navbar-toggler {
+      color: var(--mindscaile-text);
+      background-color: var(--mindscaile-cta);
+    }
+
+    /* Keep text readable over dark or photographic areas */
+    .masthead,
+    .masthead p,
+    .masthead .intro-lead-in,
+    .masthead .intro-heading,
+    .mindscaile-process,
+    .mindscaile-process h3,
+    .mindscaile-process span {
+      color: #FFFFFF;
+    }
+      /* Alternating section backgrounds */
+    #portfolio,
+    #timeline,
+    #clients {
+      background-color: #E8F8F8 !important;
+    }
+
+    #services,
+    #about,
+    #team,
+    #contact {
+      background-color: #FFFFFF !important;
+    }
+        /* Alternating two-color section dividers */
+    #services,
+    #team,
+    #contact {
+      background-image: linear-gradient(
+        to right,
+        #00D0D7 0%,
+        #00D0D7 22%,
+        #17364F 22%,
+        #17364F 100%
+      ) !important;
+      background-size: 100% 5px !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #portfolio,
+    #timeline,
+    #clients {
+      background-image: linear-gradient(
+        to right,
+        #17364F 0%,
+        #17364F 78%,
+        #00D0D7 78%,
+        #00D0D7 100%
+      ) !important;
+      background-size: 100% 5px !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+    }
+
+    /* About already uses decorative pseudo-elements */
+    #about.mindscaile-about::before {
+      width: 22%;
+      background: #00D0D7 !important;
+    }
+
+    #about.mindscaile-about::after {
+      left: 22%;
+      background: #17364F !important;
+    }
+        /* Contact form fields */
+    #contact .form-control {
+      color: #0D1A2F !important;
+      background-color: #F3FCFC !important;
+      border: 1px solid #17364F !important;
+      border-left: 7px solid #00D0D7 !important;
+      box-shadow: none;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    /* Aquamarine detail on the opposite side of Message */
+    #contact textarea.form-control {
+      border-left: 1px solid #17364F !important;
+      border-right: 7px solid #00D0D7 !important;
+    }
+
+    /* Placeholder text */
+    #contact .form-control::placeholder {
+      color: #17364F !important;
+      opacity: 0.65;
+      font-weight: 600;
+    }
+
+    /* Selected field */
+    #contact .form-control:focus {
+      color: #0D1A2F !important;
+      background-color: #FFFFFF !important;
+      border-color: #17364F !important;
+      box-shadow: 0 0 0 0.2rem rgba(0, 208, 215, 0.30) !important;
+    }
+
+    #contact .form-control:focus {
+      border-left-color: #00D0D7 !important;
+    }
+
+    #contact textarea.form-control:focus {
+      border-left-color: #17364F !important;
+      border-right-color: #00D0D7 !important;
+    }
+        /* Bicolor borders for team photos */
+    #team .team-member img {
+      padding: 7px;
+      border: 0 !important;
+      border-radius: 50%;
+      background: conic-gradient(
+        from -35deg,
+        #00D0D7 0deg,
+        #00D0D7 70deg,
+        #17364F 70deg,
+        #17364F 360deg
+      );
+      object-fit: cover;
+    }
+
+    /* Alternate the aquamarine segment */
+    #team .row > [class*="col-"]:nth-child(even) .team-member img {
+      background: conic-gradient(
+        from 145deg,
+        #00D0D7 0deg,
+        #00D0D7 70deg,
+        #17364F 70deg,
+        #17364F 360deg
+      );
+    }
+    </style>
 </head>
 
 
@@ -53,7 +280,10 @@
   style="background-color: #212529"
 >
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="/#">MindScAile</a>
+    <a class="navbar-brand js-scroll-trigger" href="/#"><img
+        height="60"
+        src="assets\img\logo\mindscaile-logo.png"
+      /></a>
     <button
       class="navbar-toggler navbar-toggler-right"
       type="button"
@@ -91,8 +321,6 @@
             class="nav-link js-scroll-trigger"
             href="/#contact"
             >Contact</a
-          ></li><li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://github.com/raviriley/agency-jekyll-theme/"
-            >Theme Source</a
           ></li>
       </ul>
     </div>
@@ -128,8 +356,66 @@
 	  <!-- Footer -->
 <footer class="footer" id="footer" style="background-color: white">
   <div class="container">
-    
     <div class="row align-items-center">
+      <!-- Footer Main Content -->
+<div class="row">
+
+<!-- Brand -->
+  <div class="col-md-4">
+    <!-- Contenedor con franja de color de fondo para que contraste el logo blanco -->
+    <div style="background-color: #17364F; display: inline-block; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px;">
+      <a href="#page-top" class="footer-brand-link">
+        <img
+          src="/assets/img/mindscaile-logo.png"
+          alt="MindScAile"
+          height="40"
+        />
+      </a>
+    </div>
+    <p>
+      De-risking AI where failure is not an option.
+    </p>
+  </div>
+
+  <!-- Navigation -->
+  <div class="col-md-2">
+    <h5>Navigation</h5>
+    <ul class="footer-links">
+      <li><a href="#page-top">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Services -->
+  <div class="col-md-3">
+    <h5>Services</h5>
+    <ul class="footer-links">
+      <li><a href="#services">Critical Systems & Software</a></li>
+      <li><a href="#services">Non-Critical Systems & Software</a></li>
+      <li><a href="#services">Business & Project Management</a></li>
+      <li><a href="#services">Process automation</a></li>
+      <li><a href="#services">Strategic support</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="col-md-3">
+    <h5>Start Your Project</h5>
+    <p>Email: mindscaile@outlook.com</p>
+    <p>Guadalajara, Mexico</p>
+    <a href="#contact" class="footer-cta">
+      Start a Project →
+    </a>
+  </div>
+
+</div>
+
+<br>    
+<br>
+<hr>
       <div class="col-md-4">
         <span class="copyright"
           >Copyright &copy; MindScAile 2026</span
@@ -138,47 +424,31 @@
       <!-- Social Media -->
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
-          
           <li class="list-inline-item">
-            
-            <a href="https://twitter.com">
-              <i class="fab fa-twitter"></i>
+            <a href="https://l-arturo-torres-romero.github.io/" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-id-card"></i>
             </a>
-            
           </li>
-          
           <li class="list-inline-item">
-            
-            <a href="https://facebook.com">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            
-          </li>
-          
-          <li class="list-inline-item">
-            
-            <a href="https://linkedin.com">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            
-          </li>
-          
-          <li class="list-inline-item">
-            
-            <a href="https://github.com/raviriley/agency-jekyll-theme">
+            <a href="https://github.com/L-Arturo-Torres-Romero" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-github"></i>
             </a>
-            
           </li>
-          
           <li class="list-inline-item">
-            
-            <a href="https://instagram.com">
-              <i class="fab fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/luisarturotorres" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
             </a>
-            
           </li>
-          
+          <li class="list-inline-item">
+            <a href="mailto:mindscaile@outlook.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://wa.me/52133XXXXXXXX" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
         </ul>
       </div>
       <!-- Legal -->
@@ -186,13 +456,12 @@
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
             <a href="legal"
-              >Privacy Policy</a
+              >Política de Privacidad</a
             >
           </li>
         </ul>
       </div>
     </div>
-    
   </div>
 </footer>
 

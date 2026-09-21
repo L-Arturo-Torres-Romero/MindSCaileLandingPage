@@ -9,6 +9,7 @@
   <meta name="description" content="Bridging the gap between advanced computational science and factory-floor profitability. We combine scientist-level rigor with sharp business acumen to deliver safe, predictable, and standard-compliant AI systems for high-consequence industries.">
   <meta name="author" content="Luis Arturo Torres Romero">
   <link rel="canonical" href="/">
+  <link rel="icon" href="/assets/img/logo/favicon_32X32.ico">
 
   <title>MindScAile</title>
 
@@ -30,6 +31,232 @@
 
   <!-- Page container change top padding when nav shrinks -->
   
+  <!-- MindScAIle global color palette -->
+    }<style id="mindscaile-global-palette">
+    :root {
+      --mindscaile-header: #17364F;
+      --mindscaile-background: #FFFFFF;
+      --mindscaile-text: #0D1A2F;
+      --mindscaile-cta: #00D0D7;
+      --mindscaile-cta-hover: #00A9AF;
+    }
+
+    /* Global background */
+    body,
+    main,
+    .page-section,
+    .bg-light,
+    #services,
+    #portfolio,
+    #about,
+    #timeline,
+    #team,
+    #clients,
+    #contact,
+    #footer {
+      background-color: var(--mindscaile-background) !important;
+    }
+
+    /* Remove the dark background image from Contact */
+    #contact {
+      background-image: none !important;
+    }
+
+    /* General text */
+    body,
+    p,
+    .page-section,
+    .page-section h1,
+    .page-section h2,
+    .page-section h3,
+    .page-section h4,
+    .page-section h5,
+    .page-section h6,
+    .section-heading,
+    .section-subheading,
+    .text-muted,
+    #contact label,
+    #footer {
+      color: var(--mindscaile-text);
+    }
+
+    /* Navigation header */
+    #mainNav,
+    #mainNav.navbar-shrink {
+      background-color: var(--mindscaile-header) !important;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+      color: #FFFFFF;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link:hover,
+    #mainNav .navbar-nav .nav-item .nav-link.active {
+      color: var(--mindscaile-cta);
+    }
+
+    #mainNav .navbar-brand {
+      color: var(--mindscaile-cta);
+    }
+
+    /* Call-to-action buttons */
+    .btn-primary {
+      color: var(--mindscaile-text) !important;
+      background-color: var(--mindscaile-cta) !important;
+      border-color: var(--mindscaile-cta) !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+      color: var(--mindscaile-text) !important;
+      background-color: var(--mindscaile-cta-hover) !important;
+      border-color: var(--mindscaile-cta-hover) !important;
+    }
+
+    .btn-primary:focus,
+    .btn-primary:active {
+      box-shadow: 0 0 0 0.2rem rgba(0, 208, 215, 0.35) !important;
+    }
+
+    /* Mobile menu button */
+    #mainNav .navbar-toggler {
+      color: var(--mindscaile-text);
+      background-color: var(--mindscaile-cta);
+    }
+
+    /* Keep text readable over dark or photographic areas */
+    .masthead,
+    .masthead p,
+    .masthead .intro-lead-in,
+    .masthead .intro-heading,
+    .mindscaile-process,
+    .mindscaile-process h3,
+    .mindscaile-process span {
+      color: #FFFFFF;
+    }
+      /* Alternating section backgrounds */
+    #portfolio,
+    #timeline,
+    #clients {
+      background-color: #E8F8F8 !important;
+    }
+
+    #services,
+    #about,
+    #team,
+    #contact {
+      background-color: #FFFFFF !important;
+    }
+        /* Alternating two-color section dividers */
+    #services,
+    #team,
+    #contact {
+      background-image: linear-gradient(
+        to right,
+        #00D0D7 0%,
+        #00D0D7 22%,
+        #17364F 22%,
+        #17364F 100%
+      ) !important;
+      background-size: 100% 5px !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #portfolio,
+    #timeline,
+    #clients {
+      background-image: linear-gradient(
+        to right,
+        #17364F 0%,
+        #17364F 78%,
+        #00D0D7 78%,
+        #00D0D7 100%
+      ) !important;
+      background-size: 100% 5px !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+    }
+
+    /* About already uses decorative pseudo-elements */
+    #about.mindscaile-about::before {
+      width: 22%;
+      background: #00D0D7 !important;
+    }
+
+    #about.mindscaile-about::after {
+      left: 22%;
+      background: #17364F !important;
+    }
+        /* Contact form fields */
+    #contact .form-control {
+      color: #0D1A2F !important;
+      background-color: #F3FCFC !important;
+      border: 1px solid #17364F !important;
+      border-left: 7px solid #00D0D7 !important;
+      box-shadow: none;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    /* Aquamarine detail on the opposite side of Message */
+    #contact textarea.form-control {
+      border-left: 1px solid #17364F !important;
+      border-right: 7px solid #00D0D7 !important;
+    }
+
+    /* Placeholder text */
+    #contact .form-control::placeholder {
+      color: #17364F !important;
+      opacity: 0.65;
+      font-weight: 600;
+    }
+
+    /* Selected field */
+    #contact .form-control:focus {
+      color: #0D1A2F !important;
+      background-color: #FFFFFF !important;
+      border-color: #17364F !important;
+      box-shadow: 0 0 0 0.2rem rgba(0, 208, 215, 0.30) !important;
+    }
+
+    #contact .form-control:focus {
+      border-left-color: #00D0D7 !important;
+    }
+
+    #contact textarea.form-control:focus {
+      border-left-color: #17364F !important;
+      border-right-color: #00D0D7 !important;
+    }
+        /* Bicolor borders for team photos */
+    #team .team-member img {
+      padding: 7px;
+      border: 0 !important;
+      border-radius: 50%;
+      background: conic-gradient(
+        from -35deg,
+        #00D0D7 0deg,
+        #00D0D7 70deg,
+        #17364F 70deg,
+        #17364F 360deg
+      );
+      object-fit: cover;
+    }
+
+    /* Alternate the aquamarine segment */
+    #team .row > [class*="col-"]:nth-child(even) .team-member img {
+      background: conic-gradient(
+        from 145deg,
+        #00D0D7 0deg,
+        #00D0D7 70deg,
+        #17364F 70deg,
+        #17364F 360deg
+      );
+    }
+    </style>
 </head>
 
 
@@ -38,7 +265,7 @@
         <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-	  <a class="navbar-brand js-scroll-trigger" href="#page-top">MindScAile</a>
+	  <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="60" src="assets\img\logo\mindscaile-logo.png"/></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -59,8 +286,6 @@
         
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
         
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://github.com/raviriley/agency-jekyll-theme/">Theme Source</a></li>
-        
         
         </ul>
       </div>
@@ -74,7 +299,7 @@
     <div class="container">
       <div class="intro-text"><div class="intro-lead-in"><p>Welcome to MindScAile</p>
 </div><div class="intro-heading text-uppercase"><p>De-risking AI where failure is not an option</p>
-</div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Explore Innovation</a></div>
+</div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Explore Innovation</a></div>
     </div>
   </header>
   
@@ -82,59 +307,158 @@
 
 <!-- Services -->
 
-  <section class="page-section" id="services">
-    <div class="container">
-	
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          
-		  <h3 class="section-subheading text-muted">Lorem ipsum</h3>
-		  
-        </div>
+<section class="page-section" id="services">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">
+          Services
+        </h2>
+
+        
+        <h3 class="section-subheading text-muted">
+          Turn an idea into a viable solution.
+        </h3>
+        
       </div>
-	  
-      <div class="row text-center">
-	  
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading"><p>E-Commerce</p>
-</h4>
-          <div class="text-muted"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-</div>
-        </div>
-	  
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading"><p>Responsive Design</p>
-</h4>
-          <div class="text-muted"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-</div>
-        </div>
-	  
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fab fa-markdown fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading"><p><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></p>
-</h4>
-          <div class="text-muted"><p>Your description here, full <strong>Markdown</strong> support</p>
-</div>
-        </div>
-	  
-      </div>
-	  
     </div>
-  </section>
+
+    <div class="row text-center">
+      
+      <div class="col-md-4">
+
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <h4 class="service-heading">
+          <p>Technology Assessment</p>
+
+        </h4>
+
+        
+        <div class="text-muted">
+          <p>We analyze your current situation, needs, processes, and tools to identify opportunities for improvement.</p>
+
+        </div>
+        
+
+      </div>
+      
+      <div class="col-md-4">
+
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-map fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <h4 class="service-heading">
+          <p>Strategy &amp; Roadmap</p>
+
+        </h4>
+
+        
+        <div class="text-muted">
+          <p>We define what to do, in what order, and with what technology, establishing a practical path to reach the result.</p>
+
+        </div>
+        
+
+      </div>
+      
+      <div class="col-md-4">
+
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-network-wired fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <h4 class="service-heading">
+          <p>Solutions Architecture</p>
+
+        </h4>
+
+        
+        <div class="text-muted">
+          <p>We design the technological solution considering integration, security, scalability, costs, and operation.</p>
+
+        </div>
+        
+
+      </div>
+      
+      <div class="col-md-4">
+
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-brain fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <h4 class="service-heading">
+          <p>Artificial Intelligence Strategy</p>
+
+        </h4>
+
+        
+        <div class="text-muted">
+          <p>We identify where AI can truly add value and how to incorporate it responsibly and profitably.</p>
+
+        </div>
+        
+
+      </div>
+      
+      <div class="col-md-4">
+
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <h4 class="service-heading">
+          <p>Process Automation</p>
+
+        </h4>
+
+        
+        <div class="text-muted">
+          <p>We detect repetitive tasks and design alternatives to reduce manual work, errors, and operating times.</p>
+
+        </div>
+        
+
+      </div>
+      
+      <div class="col-md-4">
+
+        <span class="fa-stack fa-4x">
+          <i class="fas fa-circle fa-stack-2x text-primary"></i>
+          <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
+        </span>
+
+        <h4 class="service-heading">
+          <p>Strategic Guidance</p>
+
+        </h4>
+
+        
+        <div class="text-muted">
+          <p>We accompany you through decision-making, vendor selection, implementation, and the evolution of the solution.</p>
+
+        </div>
+        
+
+      </div>
+      
+    </div>
+
+  </div>
+</section>
 
 <!-- End Services -->
+
 <!-- Portfolio Grid -->
 
 <section class="bg-light page-section" id="portfolio">
@@ -159,8 +483,8 @@
           <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Threads</h4>
-          <p class="text-muted">Illustration</p>
+          <h4>AI Safety Requirements Generation System</h4>
+          <p class="text-muted">Critical Systems and Software</p>
         </div>
       </div>
 	
@@ -174,8 +498,8 @@
           <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Explore</h4>
-          <p class="text-muted">Graphic Design</p>
+          <h4>Turning Challenges into Technology Strategies</h4>
+          <p class="text-muted">Driving measurable business value</p>
         </div>
       </div>
 	
@@ -189,8 +513,8 @@
           <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Finish</h4>
-          <p class="text-muted">Identity</p>
+          <h4>Building technology around the way your business works</h4>
+          <p class="text-muted">Software & Systems</p>
         </div>
       </div>
 	
@@ -204,8 +528,8 @@
           <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Lines</h4>
-          <p class="text-muted">Branding</p>
+          <h4>Turning Data into Insights and Better Decisions</h4>
+          <p class="text-muted">Data & Intelligence</p>
         </div>
       </div>
 	
@@ -219,8 +543,8 @@
           <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Southwest</h4>
-          <p class="text-muted">Website Design</p>
+          <h4>Making complex processes simpler, faster, and more efficient</h4>
+          <p class="text-muted">Automation & Optimization</p>
         </div>
       </div>
 	
@@ -234,8 +558,8 @@
           <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>Window</h4>
-          <p class="text-muted">Photography</p>
+          <h4>Engineering Solutions for Reliability and Performance</h4>
+          <p class="text-muted">Engineering & Safety</p>
         </div>
       </div>
 	
@@ -265,19 +589,29 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Threads</h2>
-              <p class="item-intro text-muted">subtitle lorem ipsum dolor sit amet consectetur.</p>
+              <h2 class="text-uppercase">Use-Case Safety Requirements</h2>
+              <p class="item-intro text-muted">AI Safety Requirements Generation System.</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/01-full.jpg"
-                alt="Shirts on a hanger"
+                alt=""
               />
-              <p><p>Use this area to describe your project. <strong>Markdown</strong> supported. This entry (project1.md) uses links for the image sources. All other projects in the portfolio use local images. Both work just fine! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p><p>This system is a <strong>Human-in-the-Loop AI system designed to support the generation and refinement of safety requirements for critical systems and software</strong>.</p>
+
+<p>Rather than automatically generating and approving requirements, the system places the <strong>engineer at the center of the decision-making process</strong>. The AI analyzes the available system information, use cases, hazards, and safety-related inputs, and provides suggestions for safety requirements. The engineer can then <strong>accept, reject, or modify each suggestion</strong>, maintaining human control over the final requirements.</p>
+
+<p>The system incorporates a <strong>Retrieval-Augmented Generation (RAG)</strong> architecture to improve the relevance and consistency of the AI-generated suggestions. Relevant information from engineering knowledge bases, safety practices, standards, and previously defined requirements can be retrieved and provided as context to the AI before generating its suggestions.</p>
+
+<p>A <strong>KPI-based evaluation system</strong> is also integrated to measure the effectiveness and efficiency of the solution. The evaluation can track metrics such as <strong>suggestion acceptance rate, rejection and modification rates, requirement generation time, and other indicators of human-AI interaction and engineering efficiency</strong>. These metrics provide feedback on how effectively the system supports engineers and help identify opportunities for continuous improvement.</p>
+
+<p>The overall approach combines <strong>Artificial Intelligence, RAG, Systems Engineering, Requirements Engineering, Human-in-the-Loop interaction, and Functional Safety practices</strong>, with particular relevance to standards such as <strong>ISO 26262</strong> and <strong>SOTIF (ISO 21448)</strong>.</p>
+
+<p>The objective is not to replace engineering expertise, but to <strong>augment engineers with AI-assisted recommendations while preserving human judgment, review, and accountability throughout the requirements engineering process</strong>.</p>
 
 <ul class="list-inline">
-  <li>Date: January 2017</li>
-  <li>Client: Threads</li>
-  <li>Category: Illustration</li>
+  <li>Date: January 2026</li>
+  <li>Project: FuSa Requirments Analysis System</li>
+  <li>Category: Critical Systems &amp; Software</li>
 </ul>
 
 </p>
@@ -318,19 +652,27 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <h2 class="text-uppercase">Turning Challenges into Technology Strategies</h2>
+              <p class="item-intro text-muted">Driving measurable business value</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/02-full.jpg"
                 alt="Keep Exploring"
               />
-              <p><p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <p><p>We help organizations understand where technology can make the greatest impact, define a clear digital transformation strategy, and build a practical roadmap to get there.
+From assessing your current technology maturity to identifying opportunities for improvement, we connect business objectives with the right technology, priorities, and investment.</p>
+
+<p>Services include:</p>
+
+<p>•	Technology Strategy
+•	Digital Transformation
+•	Digital Maturity Assessment
+•	Technology Roadmaps</p>
 
 <ul class="list-inline">
-  <li>Date: January 2017</li>
-  <li>Client: Explore</li>
-  <li>Category: Graphic Design</li>
+  <li>Date: September 2026</li>
+  <li>Project: Smart Mobility Transformation</li>
+  <li>Category: Automotive &amp; AI</li>
 </ul>
 
 </p>
@@ -371,19 +713,26 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <h2 class="text-uppercase">Building technology around the way your business works</h2>
+              <p class="item-intro text-muted">Software & Systems</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/03-full.jpg"
                 alt=""
               />
-              <p><p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <p><p>We design and develop reliable software solutions tailored to your specific processes, integrating the systems and technologies your business already uses. From custom applications to cloud-based platforms, we build scalable solutions that simplify operations, connect information, and support growth.</p>
+
+<p>Services include:</p>
+
+<p>•	Custom Software
+•	Business Systems
+•	System Integration
+•	Cloud Solutions</p>
 
 <ul class="list-inline">
-  <li>Date: January 2017</li>
-  <li>Client: Finish</li>
-  <li>Category: Identity</li>
+  <li>Date: September 2026</li>
+  <li>Project: SmartCore</li>
+  <li>Category: Software &amp; Systems</li>
 </ul>
 
 </p>
@@ -424,19 +773,26 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <h2 class="text-uppercase">Turning Data into Insights and Better Decisions</h2>
+              <p class="item-intro text-muted">Data & Intelligence</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/04-full.jpg"
                 alt=""
               />
-              <p><p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <p><p>We help organizations transform scattered data into reliable information they can use to understand their business, identify opportunities, and make informed decisions. From data engineering and business intelligence to advanced analytics and AI solutions, we build the foundation for smarter, more connected organizations.</p>
+
+<p>Services include:</p>
+
+<p>•	Business Intelligence
+•	Data Engineering
+•	Analytics
+•	AI Solutions</p>
 
 <ul class="list-inline">
-  <li>Date: October 2019</li>
-  <li>Client: Lines</li>
-  <li>Category: Branding</li>
+  <li>Date: September 2026</li>
+  <li>Project: Insight Analytics</li>
+  <li>Category: Data &amp; Intelligence</li>
 </ul>
 
 </p>
@@ -477,19 +833,26 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <h2 class="text-uppercase">Making complex processes simpler, faster, and more efficient</h2>
+              <p class="item-intro text-muted">Automation & Optimization</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/05-full.jpg"
                 alt=""
               />
-              <p><p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <p><p>We analyze business processes to identify bottlenecks, reduce repetitive work, and improve operational efficiency. By combining automation, software, and intelligent technologies, we create solutions that streamline workflows, minimize errors, and allow teams to focus on higher-value work.</p>
+
+<p>Services include:</p>
+
+<p>•	Process Optimization
+•	Workflow Automation
+•	Robotic Process Automation (RPA)
+•	Intelligent Automation</p>
 
 <ul class="list-inline">
-  <li>Date: October 2019</li>
-  <li>Client: Southwest</li>
-  <li>Category: Website Design</li>
+  <li>Date: September 2026</li>
+  <li>Project: SmartFlow</li>
+  <li>Category: Automation &amp; Optimization</li>
 </ul>
 
 </p>
@@ -530,19 +893,26 @@
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+              <h2 class="text-uppercase">Engineering Solutions for Reliability and Performance</h2>
+              <p class="item-intro text-muted">Engineering & Safety</p>
               <img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/portfolio/06-full.jpg"
                 alt=""
               />
-              <p><p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <p><p>We combine systems engineering, software development, and technology expertise to design and improve solutions where reliability and safety matter. From embedded systems and connected technologies to functional safety and technology risk, we help organizations build solutions that perform reliably in complex environments.</p>
+
+<p>Services include:</p>
+
+<p>•	Embedded Systems
+•	Robotics &amp; IoT
+•	Functional Safety
+•	Technology Risk</p>
 
 <ul class="list-inline">
-  <li>Date: October 2019</li>
-  <li>Client: Window</li>
-  <li>Category: Photography</li>
+  <li>Date: September 2026</li>
+  <li>Project: TechCore</li>
+  <li>Category: Engineering &amp; Safety</li>
 </ul>
 
 </p>
@@ -585,7 +955,7 @@
     left: 0;
     width: 22%;
     height: 5px;
-    background: #b8860b;
+    background: #00D0D7;
   }
 
   #about.mindscaile-about::after {
@@ -621,7 +991,7 @@
     content: "";
     width: 35px;
     height: 3px;
-    background: #b8860b;
+    background: #00D0D7;
   }
 
   .mindscaile-about-title {
@@ -714,7 +1084,7 @@
     position: absolute;
     bottom: -90px;
     left: -80px;
-    background: #b8860b;
+    background: #00D0D7;
     transform: rotate(45deg);
   }
 
@@ -726,7 +1096,7 @@
 
   .mindscaile-process-heading i {
     margin-bottom: 20px;
-    color: #d4a514;
+    color: #00D0D7;
     font-size: 38px;
   }
 
@@ -753,7 +1123,7 @@
   }
 
   .mindscaile-process-number {
-    color: #d4a514;
+    color: #00D0D7;
     font-weight: 700;
   }
 
@@ -806,7 +1176,7 @@
     <div class="mindscaile-about-grid">
 
       <div class="mindscaile-about-content">
-        <div class="mindscaile-about-label">About MindScAile</div>
+        <div class="mindscaile-about-label">About MindScAIle</div>
 
         <h2 class="mindscaile-about-title">
           About Us
@@ -959,7 +1329,7 @@
 		  	
 			<li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Be Part <br> of Our <br> Story!</h4>
+                <h4><a href="#contact" class="js-scroll-trigger" style="color: inherit; text-decoration: none; display: block; width: 100%; height: 100%;">Be Part <br> of Our <br> Story!</a></h4>
               </div>
             </li>
 		  
@@ -979,7 +1349,7 @@
   <div class="row">
 	<div class="col-lg-12 text-center">
 	  <h2 class="section-heading text-uppercase">OUR AMAZING TEAM</h2>
-	  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+	  <h3 class="section-subheading text-muted">The people who turn complex AI challenges into safe, resilient, and high-performing solutions.</h3>
 	</div>
   </div>
   <div class="row d-flex justify-content-center">
@@ -987,7 +1357,7 @@
 	<div class="col-sm-4">
 	  <div class="team-member">
 		<img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="">
-		<h4>MIguel Marina</h4>
+		<h4>Miguel Marina</h4>
 		<p class="text-muted">Expert Assessor</p>
 		<ul class="list-inline social-buttons">
 		
@@ -1021,14 +1391,14 @@
 		<ul class="list-inline social-buttons">
 		
 		  <li class="list-inline-item">
-			<a href="https://twitter.com">
-			  <i class="fab fa-twitter"></i>
+			<a href="https://l-arturo-torres-romero.github.io/">
+			  <i class="fas fa-id-card"></i>
 			</a>
 		  </li>
 		
 		  <li class="list-inline-item">
-			<a href="https://facebook.com">
-			  <i class="fab fa-facebook-f"></i>
+			<a href="https://github.com/L-Arturo-Torres-Romero">
+			  <i class="fab fa-github"></i>
 			</a>
 		  </li>
 		
@@ -1074,7 +1444,7 @@
   </div>
   <div class="row">
 	<div class="col-lg-8 mx-auto text-center">
-	  <div class="large text-muted"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. <strong>Markdown</strong> supported.</p>
+	  <div class="large text-muted"><p>We combine deep technical rigor with proactive risk management, ensuring your artificial intelligence initiatives scale safely and perform reliably in production.</p>
 </div>
 	</div>
   </div>
@@ -1191,8 +1561,66 @@
 	  <!-- Footer -->
 <footer class="footer" id="footer" style="background-color: white">
   <div class="container">
-    
     <div class="row align-items-center">
+      <!-- Footer Main Content -->
+<div class="row">
+
+<!-- Brand -->
+  <div class="col-md-4">
+    <!-- Contenedor con franja de color de fondo para que contraste el logo blanco -->
+    <div style="background-color: #17364F; display: inline-block; padding: 10px 15px; border-radius: 4px; margin-bottom: 15px;">
+      <a href="#page-top" class="footer-brand-link">
+        <img
+          src="/assets/img/mindscaile-logo.png"
+          alt="MindScAile"
+          height="40"
+        />
+      </a>
+    </div>
+    <p>
+      De-risking AI where failure is not an option.
+    </p>
+  </div>
+
+  <!-- Navigation -->
+  <div class="col-md-2">
+    <h5>Navigation</h5>
+    <ul class="footer-links">
+      <li><a href="#page-top">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Services -->
+  <div class="col-md-3">
+    <h5>Services</h5>
+    <ul class="footer-links">
+      <li><a href="#services">Critical Systems & Software</a></li>
+      <li><a href="#services">Non-Critical Systems & Software</a></li>
+      <li><a href="#services">Business & Project Management</a></li>
+      <li><a href="#services">Process automation</a></li>
+      <li><a href="#services">Strategic support</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="col-md-3">
+    <h5>Start Your Project</h5>
+    <p>Email: mindscaile@outlook.com</p>
+    <p>Guadalajara, Mexico</p>
+    <a href="#contact" class="footer-cta">
+      Start a Project →
+    </a>
+  </div>
+
+</div>
+
+<br>    
+<br>
+<hr>
       <div class="col-md-4">
         <span class="copyright"
           >Copyright &copy; MindScAile 2026</span
@@ -1201,47 +1629,31 @@
       <!-- Social Media -->
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
-          
           <li class="list-inline-item">
-            
-            <a href="https://twitter.com">
-              <i class="fab fa-twitter"></i>
+            <a href="https://l-arturo-torres-romero.github.io/" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-id-card"></i>
             </a>
-            
           </li>
-          
           <li class="list-inline-item">
-            
-            <a href="https://facebook.com">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            
-          </li>
-          
-          <li class="list-inline-item">
-            
-            <a href="https://linkedin.com">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            
-          </li>
-          
-          <li class="list-inline-item">
-            
-            <a href="https://github.com/raviriley/agency-jekyll-theme">
+            <a href="https://github.com/L-Arturo-Torres-Romero" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-github"></i>
             </a>
-            
           </li>
-          
           <li class="list-inline-item">
-            
-            <a href="https://instagram.com">
-              <i class="fab fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/luisarturotorres" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
             </a>
-            
           </li>
-          
+          <li class="list-inline-item">
+            <a href="mailto:mindscaile@outlook.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://wa.me/52133XXXXXXXX" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
         </ul>
       </div>
       <!-- Legal -->
@@ -1249,13 +1661,12 @@
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
             <a href="legal"
-              >Privacy Policy</a
+              >Política de Privacidad</a
             >
           </li>
         </ul>
       </div>
     </div>
-    
   </div>
 </footer>
 

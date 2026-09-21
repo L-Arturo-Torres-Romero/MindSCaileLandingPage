@@ -20,5 +20,6 @@ Services include:
 
 {:.list-inline}
 - Date: September 2026
+- Project: TechCore
 - Category: Engineering & Safety
 

@@ -135,7 +135,7 @@ en: &DEFAULT_EN
   #          icon: fab fa-facebook-f
           - url: https://www.linkedin.com/in/progman32
             icon: fab fa-linkedin-in
-      - name: "Luis Arturo Torres"
+      - name: "Dr. Luis Arturo Torres"
         role: "Chief Scientist"
         image: assets/img/team/2.jpg
         social:

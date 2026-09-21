@@ -21,5 +21,6 @@ Services include:
 
 {:.list-inline}
 - Date: September 2026
+- Project: Insight Analytics
 - Category: Data & Intelligence
 

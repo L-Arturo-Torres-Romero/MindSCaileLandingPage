@@ -41,8 +41,8 @@ en: &DEFAULT_EN
         icon: "fas fa-comments"
 
   portfolio:
-    title: "Use cases"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    title: "The MindScAile Difference"
+    text: "What makes our approach different."
     section: portfolio
     closebutton: "Close Project"
 

@@ -203,7 +203,7 @@ en-AU:
 es: &DEFAULT_ES
   header:
     title: ¡Bienvenido a nuestro Estudio!
-    text: Es un placer conocerle
+    text: Reducir el riesgo de la IA cuando fallar no es una opción.
     button: Ver más
     buttonlink: "#servicios"
 

@@ -346,7 +346,7 @@ es: &DEFAULT_ES
         icon: "fab fa-linkedin-in"
       - url: "mailto:tu-correo@empresa.com"
         icon: "fas fa-envelope"
-      - url: "https://wa.me/52133XXXXXXXX"
+      - url: "https://wa.me/5213313652930"
         icon: "fab fa-whatsapp"
 
 es-ES:

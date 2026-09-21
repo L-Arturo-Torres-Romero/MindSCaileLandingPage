@@ -1,6 +1,6 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
+title: Turning Challenges into Technology Strategies
+subtitle: Driving measurable business value.
 image: assets/img/portfolio/02-full.jpg
 alt: Keep Exploring
 

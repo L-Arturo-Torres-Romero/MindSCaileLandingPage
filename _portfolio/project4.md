@@ -1,18 +1,25 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
+title: Turning Data into Insights and Better Decisions
+subtitle: Data & Intelligence
 image: assets/img/portfolio/04-full.jpg
 alt: 
 
 caption:
-  title: Lines
-  subtitle: Branding
+  title: Turning Data into Insights and Better Decisions
+  subtitle: Data & Intelligence
   thumbnail: assets/img/portfolio/04-thumbnail.jpg
 ---
-Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+We help organizations transform scattered data into reliable information they can use to understand their business, identify opportunities, and make informed decisions. From data engineering and business intelligence to advanced analytics and AI solutions, we build the foundation for smarter, more connected organizations.
+
+Services include:
+
+•	Business Intelligence
+•	Data Engineering
+•	Analytics
+•	AI Solutions
+
 
 {:.list-inline}
-- Date: October 2019
-- Client: Lines
-- Category: Branding
+- Date: September 2026
+- Category: Data & Intelligence
 

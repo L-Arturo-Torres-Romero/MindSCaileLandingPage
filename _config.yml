@@ -24,6 +24,7 @@ author     : Luis Arturo Torres Romero
 logo:     #optional, defaults to site title
    path: assets\img\logo\mindscaile-logo.png
    height: 60 #height in px, defaults to 52px
+   alt: MindScAile Logo #alt text for logo image, defaults to site title
 
 locale: "en-US" # See available languages in _data/sitetext.yml
 

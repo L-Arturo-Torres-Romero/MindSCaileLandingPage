@@ -14,7 +14,7 @@
 theme: jekyll-agency
 # remote_theme is unnecessary when using the installed jekyll-agency gem.
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://www.mindscaile.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : MindScAile

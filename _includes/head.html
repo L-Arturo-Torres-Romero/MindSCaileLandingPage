@@ -1,18 +1,16 @@
 <head>
-  {% if site.analytics.google %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18511895088"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("js", new Date());
+    gtag('js', new Date());
 
-    gtag("config", "{{ site.analytics.google }}");
+    gtag('config', 'AW-18511895088');
   </script>
-  <!-- End Google Analytics -->
-  {% endif %}
+  <!-- End Google tag (gtag.js) -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,17 +26,19 @@
 
   <!-- Custom fonts for this template -->
   <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+
   {% if site.data.style.fonts_urls %}
     {% for font_url in site.data.style.fonts_urls %}
-      <link href="{{font_url}}" rel="stylesheet" type="text/css">
+      <link href="{{ font_url }}" rel="stylesheet" type="text/css">
     {% endfor %}
   {% else %}
     <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
   {% endif %}
+
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
   <link href="assets/css/agency.css" rel="stylesheet" />
@@ -49,6 +49,7 @@
     #pagecontainer {
       padding-top: 150px;
     }
+
     @media only screen and (max-width: 991px) {
       #pagecontainer {
         padding-top: 100px;
@@ -56,8 +57,9 @@
     }
   </style>
   {% endif %}
+
   <!-- MindScAIle global color palette -->
-    }<style id="mindscaile-global-palette">
+  <style id="mindscaile-global-palette">
     :root {
       --mindscaile-header: #17364F;
       --mindscaile-background: #FFFFFF;
@@ -160,7 +162,8 @@
     .mindscaile-process span {
       color: #FFFFFF;
     }
-      /* Alternating section backgrounds */
+
+    /* Alternating section backgrounds */
     #portfolio,
     #timeline,
     #clients {
@@ -173,7 +176,8 @@
     #contact {
       background-color: #FFFFFF !important;
     }
-        /* Alternating two-color section dividers */
+
+    /* Alternating two-color section dividers */
     #services,
     #team,
     #contact {
@@ -214,7 +218,8 @@
       left: 22%;
       background: #17364F !important;
     }
-        /* Contact form fields */
+
+    /* Contact form fields */
     #contact .form-control {
       color: #0D1A2F !important;
       background-color: #F3FCFC !important;
@@ -256,7 +261,8 @@
       border-left-color: #17364F !important;
       border-right-color: #00D0D7 !important;
     }
-        /* Bicolor borders for team photos */
+
+    /* Bicolor borders for team photos */
     #team .team-member img {
       padding: 7px;
       border: 0 !important;
@@ -281,5 +287,5 @@
         #17364F 360deg
       );
     }
-    </style>
+  </style>
 </head>

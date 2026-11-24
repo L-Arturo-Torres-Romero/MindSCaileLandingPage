@@ -17,7 +17,7 @@ permalink: /legal
 * **Privacy Contact Email:** luisarturo.torres7.tech@gmail.com
 
 ### 1.1 Scope and Regulatory Compliance
-Mindscaile ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This Privacy Policy governs data collection and usage on <https://www.mindscaile.com/> and complies with:
+Mindscaile we respect your privacy and is committed to protecting your personal data. This Privacy Policy governs data collection and usage on <https://www.mindscaile.com/> and complies with:
 
 - **Mexico:** The Federal Law on Protection of Personal Data Held by Private Parties (*Ley Federal de Protección de Datos Personales en Posesión de los Particulares* – LFPDPPP) and its Regulations.
 - **United States:** Applicable U.S. federal privacy standards (FTC Act) and state privacy laws, including the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA).
